@@ -70,7 +70,7 @@ public class ReactContextBuilder {
 
         // load native modules
         NativeModuleRegistryBuilder nativeRegistryBuilder = new NativeModuleRegistryBuilder(reactContext, this.instanceManager);
-        addNativeModules(reactContext, nativeRegistryBuilder);
+        addNativeModules(reactContext, nativeRegistryBuilder, true);
 
         CatalystInstanceImpl.Builder catalystInstanceBuilder = new CatalystInstanceImpl.Builder()
                 .setReactQueueConfigurationSpec(ReactQueueConfigurationSpec.createDefault())
